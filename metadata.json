@@ -1,0 +1,6 @@
+{
+  "name": "Cùng Con 10 Phút AI",
+  "description": "Ứng dụng đồng hành cùng phụ huynh lớp 1 học Toán và Tiếng Việt: Ít thời gian – Đúng phương pháp – Con tiến bộ mỗi ngày.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

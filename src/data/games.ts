@@ -1,0 +1,118 @@
+import { PhysicalGame } from '../types';
+
+export const PHYSICAL_GAMES: PhysicalGame[] = [
+  {
+    id: 'game-01',
+    order: 1,
+    title: 'Đếm nắp chai thần tốc',
+    subject: 'toan',
+    target: 'Rèn luyện khả năng đếm tương ứng 1-1, phân loại màu sắc và phản xạ nhanh.',
+    materials: ['10 đến 20 nắp chai nhựa sạch nhiều màu', '1 chiếc rổ nhỏ hoặc hộp giấy'],
+    rules: [
+      'Bố mẹ hô số lượng và màu sắc (ví dụ: "Lấy 5 nắp chai màu xanh!").',
+      'Con nhanh tay nhặt vào rổ và đếm to từng cái.',
+      'Hai bố con cùng kiểm tra lại xem đã đủ số lượng chưa.',
+    ],
+    parentInstructions: 'Bố mẹ đóng vai khách hàng đến mua hàng tại cửa hàng tạp hóa của bé. Nói bằng giọng vui tươi, hồi hộp.',
+    howToFinish: 'Bé lấy đúng số lượng 3 lần liên tiếp, hai bố con đập tay ăn mừng "High-five!".',
+    adjustDifficulty: {
+      easier: 'Chỉ yêu cầu lấy theo số lượng (1-5), không cần phân biệt màu sắc.',
+      harder: 'Yêu cầu kết hợp phép tính: "Lấy cho mẹ 3 nắp đỏ và thêm 2 nắp xanh, đố con có tất cả mấy nắp?".',
+    },
+  },
+  {
+    id: 'game-02',
+    order: 2,
+    title: 'Tìm số còn thiếu trên bậc thang',
+    subject: 'toan',
+    target: 'Ghi nhớ thứ tự dãy số từ 1 đến 10 xuôi và ngược, phát triển tư duy suy luận.',
+    materials: ['10 mẩu giấy nhỏ ghi số từ 1 đến 10', 'Sàn nhà hoặc mặt bàn'],
+    rules: [
+      'Bố mẹ xếp các mẩu giấy số thành 1 hàng theo thứ tự từ 1 đến 10.',
+      'Bảo con nhắm mắt lại 5 giây: Bố mẹ lấy đi 1 hoặc 2 số bất kỳ và úp xuống.',
+      'Con mở mắt và đoán xem "bạn số" nào đã đi trốn.',
+    ],
+    parentInstructions: 'Khích lệ con: "Có một bạn số tinh nghịch vừa lẻn đi chơi trốn tìm, con tinh mắt tìm ra bạn ấy giúp bố nhé!".',
+    howToFinish: 'Bé tìm được 3 bạn số đi trốn và xếp đúng vị trí vào hàng.',
+    adjustDifficulty: {
+      easier: 'Chỉ xếp dãy từ 1 đến 5 và chỉ giấu 1 số.',
+      harder: 'Xếp dãy số đếm lùi từ 10 về 1 hoặc giấu 2 số liền kề.',
+    },
+  },
+  {
+    id: 'game-03',
+    order: 3,
+    title: 'Ghép thẻ chữ - Bắt tay bạn thân',
+    subject: 'tieng-viet',
+    target: 'Ghép phụ âm đầu và âm chính/vần để tạo thành tiếng có nghĩa.',
+    materials: ['Các mẩu giấy cắt hình chữ nhật ghi chữ cái (b, c, m, a, o, e...)', 'Bút dạ'],
+    rules: [
+      'Bố mẹ cầm thẻ âm đầu (ví dụ: thẻ "b"). Con cầm các thẻ nguyên âm (a, o, e...).',
+      'Mỗi khi con đưa thẻ của mình lại gần thẻ của bố mẹ, hai bố con cùng phát âm ghép tiếng đó (b - a -> ba!).',
+      'Đố con xem tiếng vừa tạo ra có nghĩa gì trong thực tế.',
+    ],
+    parentInstructions: 'Mỗi lần ghép đúng, bố mẹ làm tiếng "Ting ting!" như máy tính tiền siêu thị.',
+    howToFinish: 'Ghép được ít nhất 5 tiếng có nghĩa quen thuộc.',
+    adjustDifficulty: {
+      easier: 'Chỉ ghép với nguyên âm "a" và các dấu thanh cơ bản.',
+      harder: 'Thêm thẻ dấu thanh (sắc, huyền, hỏi, ngã, nặng) để tạo thành từ hoàn chỉnh.',
+    },
+  },
+  {
+    id: 'game-04',
+    order: 4,
+    title: 'Tìm tiếng đúng - Vỗ bàn bắt chữ',
+    subject: 'tieng-viet',
+    target: 'Tăng tốc độ nhận diện mặt chữ và phân biệt âm dễ lẫn.',
+    materials: ['6 đến 8 thẻ từ trải rộng trên bàn (bò, cá, gà, nhà, xe, hoa...)'],
+    rules: [
+      'Bố mẹ đọc to một từ bất kỳ.',
+      'Bé dùng bàn tay vỗ nhẹ lên thẻ có từ đó.',
+      'Nếu đọc đúng, bé được giữ thẻ từ đó về phía mình.',
+    ],
+    parentInstructions: 'Để tăng tính hào hứng, bố mẹ có thể cùng thi vỗ tay với con nhưng cố tình vỗ chậm hơn con nửa nhịp.',
+    howToFinish: 'Bé thu thập được toàn bộ thẻ từ trên bàn.',
+    adjustDifficulty: {
+      easier: 'Chỉ để 3 thẻ từ có hình dáng và âm đầu khác nhau hoàn toàn.',
+      harder: 'Để các từ có âm gần giống nhau (ba - bà - bá hoặc bò - đò).',
+    },
+  },
+  {
+    id: 'game-05',
+    order: 5,
+    title: 'Chiếc hộp bí mật - Bàn tay thần kỳ',
+    subject: 'toan',
+    target: 'Nhận biết hình khối (tròn, vuông, khối hộp) và số lượng thông qua xúc giác.',
+    materials: ['1 chiếc hộp giấy đục 2 lỗ vừa cổ tay', 'Các đồ vật quen thuộc: quả bóng bàn, bao diêm, cục tẩy, cái thìa'],
+    rules: [
+      'Bố mẹ bỏ bí mật một đồ vật vào trong hộp mà không cho con nhìn thấy.',
+      'Con luồn tay vào lỗ sờ và miêu tả cảm giác: Tròn lăn được, có góc nhọn hay cạnh phẳng.',
+      'Con đoán tên đồ vật và hình khối trước khi rút ra kiểm tra.',
+    ],
+    parentInstructions: 'Đặt câu hỏi gợi ý xúc giác: "Nó cứng hay mềm? Nó có cạnh sắc không? Nó lăn được không?".',
+    howToFinish: 'Đoán đúng 3 đồ vật bí mật.',
+    adjustDifficulty: {
+      easier: 'Dùng đồ vật có hình dáng rất đặc thù (quả bóng tròn xoe, chiếc thìa dài).',
+      harder: 'Bỏ nhiều viên bi nhỏ và yêu cầu con luồn tay vào bốc đúng 4 viên bi ra ngoài.',
+    },
+  },
+  {
+    id: 'game-06',
+    order: 6,
+    title: 'Kể chuyện tiếp sức từ 3 bức tranh',
+    subject: 'tieng-viet',
+    target: 'Phát triển năng lực ngôn ngữ, trí tưởng tượng và khả năng diễn đạt trọn vẹn câu văn.',
+    materials: ['3 bức tranh đơn giản cắt từ báo/sách cũ hoặc bố mẹ vẽ phác thảo que đơn giản'],
+    rules: [
+      'Bức tranh 1: Bố mẹ mở đầu câu chuyện bằng 1 câu ngắn.',
+      'Bức tranh 2: Con kể tiếp diễn biến câu chuyện.',
+      'Bức tranh 3: Hai bố con cùng thảo luận để tạo ra cái kết vui nhộn.',
+    ],
+    parentInstructions: 'Không bắt con phải kể theo một kịch bản cố định. Mọi sáng tạo ngộ nghĩnh của con đều đáng được vỗ tay khen ngợi.',
+    howToFinish: 'Hai bố con hoàn thành một mẩu chuyện 3 phút có đầu có đuôi.',
+    adjustDifficulty: {
+      easier: 'Bố mẹ hỏi từng câu hỏi gợi mở để con trả lời thay vì tự nghĩ cốt truyện.',
+      harder: 'Cho con tự nghĩ lời thoại cho các nhân vật trong tranh.',
+    },
+  },
+];
